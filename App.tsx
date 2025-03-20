@@ -1,20 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import HomeScreen from './screens/HomeScreen';  // Asegúrate de que la ruta sea correcta
+import PredictionsScreen from './screens/PredictionsScreen';  // Asegúrate de tener esta pantalla
+import AlertsScreen from './screens/AlertsScreen';  // Asegúrate de tener esta pantalla
+import NewsScreen from './screens/NewsScreen';  // Asegúrate de tener esta pantalla
+import HelpScreen from './screens/HelpScreen';
+import InformationScreen from './screens/InformationScreen';
 
-export default function App() {
+
+const Stack = createStackNavigator();
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Predictions" component={PredictionsScreen} />
+        <Stack.Screen name="News" component={NewsScreen} />
+        <Stack.Screen name="Alerts" component={AlertsScreen} />
+        <Stack.Screen name="Help" component={HelpScreen} />
+        <Stack.Screen name="Information" component={InformationScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
