@@ -1,0 +1,4 @@
+-Librerias para ejecución del proyecto-
+
+Instalar sequelize que es un ORM de Node.js que permite la interaccion con bases de datos mediante MYSQL que en lugar de consultas utiliza metodos y objetos
+npm install sequelize mysql

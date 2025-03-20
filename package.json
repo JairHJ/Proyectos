@@ -12,12 +12,24 @@
   "dependencies": {
     "expo": "~52.0.37",
     "expo-status-bar": "~2.0.1",
+    "mysql2": "^3.13.0",
     "react": "18.3.1",
-    "react-native": "0.76.7"
+    "react-native": "0.76.7",
+    "react-native-chart-kit": "^6.12.0",
+    "react-native-gesture-handler": "^2.24.0",
+    "react-native-maps": "^1.20.1",
+    "react-native-paper": "^5.13.1",
+    "react-native-reanimated": "^3.17.1",
+    "react-native-vector-icons": "^10.2.0",
+    "sequelize": "^6.37.6"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@types/react": "~18.3.12",
+    "@types/react-native": "^0.72.8",
+    "@types/react-native-maps": "^0.24.1",
+    "@types/react-native-vector-icons": "^6.4.18",
+    "@types/sequelize": "^4.28.20",
     "typescript": "^5.3.3"
   },
   "private": true

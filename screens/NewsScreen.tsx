@@ -4,14 +4,14 @@ import { View, Text, FlatList, StyleSheet } from 'react-native';
 
 const NewsScreen = () => {
   const newsData = [
-    { id: '1', title: 'Huracán A se acerca a la costa este' },
-    { id: '2', title: 'Fenómeno El Niño afecta el clima global' },
-    { id: '3', title: 'Pronóstico de huracanes para el mes de septiembre' },
+    { id: '1', title: 'En caso de huracan' },
+    { id: '2', title: 'En caso de terremotos' },
+    { id: '3', title: 'En caso de tsunamis' },
   ];
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Últimas Noticias</Text>
+      <Text style={styles.title}>Recomendaciones en caso de fenomenos</Text>
       <FlatList
         data={newsData}
         keyExtractor={(item) => item.id}
@@ -34,6 +34,8 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 24,
+    justifyContent: 'center',
+    alignItems: 'center',
     fontWeight: 'bold',
     marginBottom: 20,
   },

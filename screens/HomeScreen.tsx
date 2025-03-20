@@ -37,8 +37,8 @@ const HomeScreen = () => {
           style={styles.button}
           onPress={() => navigation.navigate("News")} // Navegamos a Noticias
         >
-          <Icon name="newspaper-outline" size={30} color="#fff" />
-          <Text style={styles.buttonText}>Últimas Noticias</Text>
+          <Icon name="help-circle-outline" size={30} color="#fff" />
+          <Text style={styles.buttonText}>Ayuda</Text>
         </TouchableOpacity>
       </View>
 
@@ -56,7 +56,7 @@ const HomeScreen = () => {
           onPress={() => navigation.navigate("Information")} // Navegar a la pantalla de Información
         >
           <Icon name="information-circle-outline" size={30} color="#fff" />
-          <Text style={styles.footerText}>Información</Text>
+          
         </TouchableOpacity>
       </View>
     </View>
